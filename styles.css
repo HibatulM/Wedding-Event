@@ -1,0 +1,439 @@
+/* Add CSS styles for your web site here and use them in index.html. */
+body {
+    background-color: #be5e22;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main div{
+    padding: 1vh;
+}
+.nav{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #ef9651;
+    padding: 1rem;
+    border-radius: 5px;
+    border: solid #320c0c;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li{
+    display: inline;
+    font-size: 5vh;
+}
+nav ul li a{
+    color: #320c0c;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+nav ul li a:not(.icon):hover{
+    background-color: #936947;
+    border-radius: 5px;
+}
+nav ul li a img{
+    width: 48px;
+    height: 48px;
+    padding-right: 15px;
+    padding-bottom: 2px;
+}
+#theme{
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+}
+#onOff{
+    width: 28px;
+    height: 28px;
+}
+/* nav ul li a:nth-of-type(2){
+    width
+} */
+
+@media(max-width: 640px){
+    /* .nav-bar{} */
+
+    .nav-bar p {
+        min-height: fit-content;
+        padding: 8vh;
+        width: fit-content;
+    }
+
+    .header h2{
+        font-size: 7vh;
+        margin-top: 15vh;
+        overflow: hidden;
+    }
+
+}
+
+#theme{
+    position: absolute;
+    top: 27px;
+    right: 380px;
+}
+
+@media(max-width: 640px){
+    #theme{
+        right: 55px;
+    }
+}
+.header{
+    background-color: #edbe67;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 17px;
+    width: 500px;
+}
+.header img{
+    position: static;
+    top: 50px;
+    width: 450px;
+    height: 450px;
+    border-top-right-radius: 17px;
+    border-top-left-radius: 17px;
+}
+
+.header h1{
+    font-family: 'Times New Roman', Helvetica, sans-serif;
+    color: #611f1f;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 5px;
+    font-weight: 100;
+    margin-top: 15px;
+}
+
+.header h4{
+    margin-top: 0;
+    color: rgb(55, 52, 52);
+    font-weight: 100;
+    text-align: center;
+    overflow: wrap;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    margin-right: 5px;
+}
+
+
+#schedule{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #f0aa32;
+    width: 500px;
+}
+
+#schedule h1{
+    font-weight: 100;
+    color:#611f1f;
+    font-size: 50px;
+    text-align: center;
+}
+
+#schedule h4{
+    margin-top: 0;
+    color: rgb(55, 52, 52);
+    font-weight: 100;
+    text-align: center;
+    overflow: wrap;
+    font-size: 20px;
+    margin-bottom: 5px;
+    /* margin-left: 45px;
+    margin-right: 10px; */
+}
+#home{
+    background-color: #edbe67 ;
+    border-radius: 5px;
+    width: 65%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.desc{
+    background-color: #edbe67;
+    margin-bottom: 30px;
+    width: 500px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.desc h2{
+    font-weight: 100;
+    color:#611f1f;
+    font-size: 20px;
+}
+
+.desc ul{
+    font-size: 20px;
+}
+.desc li{
+    list-style: none;
+    background-image: url("https://svgsilh.com/svg/2093461.svg");
+    background-size: 15px;
+    background-repeat: no-repeat;
+    padding: 26px 0 26px 24px;
+    background-position: left center;
+    
+}
+
+
+.form{
+    background-color: #f0aa32;
+    width: 500px;
+    border-radius: 5px;
+}
+
+.form h1{
+    font-weight: 150;
+    color:#611f1f;
+    font-size: 35px;
+    text-align: center;
+}
+
+.rsvpSec{
+    background-color: #ef9651;
+    width: 500px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.rsvpSec h2{
+    color: #4b1515;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+#rsvp {
+    /* display: flex;
+    flex-direction: column; */
+    font-size: 18px;
+}
+
+#rsvp label{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    /* flex-direction: row; */
+    color:#531b1b;
+    font-weight: 180;
+}
+
+#rsvp label input{
+    color: #611f1f;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    border-radius: 5px;
+    border-color: #320c0c;
+    background-color: #f8d698;
+}
+#rsvp label input[type=text]{
+    width: 180px;
+    margin-bottom: 10px;
+}
+#rsvp input[type=number]{
+    width: 50px;
+    
+}
+
+#rsvp input[type=radio]{
+    color: #611f1f;
+}
+
+#rsvp input[type=email]{
+    width: 220px;
+    margin-bottom: 10px;
+}
+
+#rsvp input[type=submit]{
+    margin-top: 10px;
+    width: 100px;
+    height: 28px;
+    background-color: #a47b5a;
+    color:#4b1515;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+img{
+    background-color: transparent;
+}
+
+.nav button{
+    background: transparent;
+    border: none;
+ }
+.form button{
+    background-color: #936947;
+    width: 70px;
+    height: 30px;
+    color:#e8dddd;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    
+}
+
+.cancel-rsvp{
+    display: flex;
+    flex-direction: column;
+}
+.dark-mode{
+    background-color: #320c0c;
+    color: white;
+}
+
+footer{
+    text-align: center;
+}
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px;  
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+  
+#modal-content {
+background-color: #865e3d;
+margin: auto;
+padding: 20px;
+border: 1px solid #888;
+width: 80%;
+color: #e9e4db;
+}
+
+#ani{
+    display: block;
+    width: 100px;
+    padding-left: 0px;
+    position: relative;
+    animation-name: thanks;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+}
+
+@keyframes thanks{
+    0% {padding-left: 0px;}
+    25% {padding-left: 150px;}
+    35% {padding-left: 350px;}
+    50% {padding-left: 500px;}
+    65% {padding-left: 750px;}
+    75% {padding-left: 950px;}
+    100% {padding-left: 1400px;}
+}
+  
+#close{
+    width: 48px;
+    height: 48px;
+    float: right;
+}
+
+/* Slideshow container */
+.slideshow-container {
+width: 400px;
+position: relative;
+margin: auto;
+background-color: #edbe67;
+border-radius: 10px;
+margin-top: 50px;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+  
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}  
+
+.slides{
+    position: static;
+    top: 50px;
+    width: 400px;
+    height: 500px;
+    border-top-right-radius: 17px;
+    border-top-left-radius: 17px;
+}
+
+.dots{
+    background-color: #edbe67;
+}
