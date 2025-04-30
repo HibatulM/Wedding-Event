@@ -1,6 +1,6 @@
 # Wedding-Event
 Wedding Event Website:
-  Link: 
+  Link: https://hibatulm.github.io/Wedding-Event/
   
 A responsive, mobile-first wedding website built with HTML, CSS, and vanilla JavaScript. Features invitation details, event schedules, venue information, and RSVP functionality. Designed as a beginner-friendly project focusing on core web development skills.
 
