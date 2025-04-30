@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HMuqeet_WEB101</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link href='https://fonts.googleapis.com/css?family=Kadwa' rel='stylesheet'>
+        
+        
+    </head>
+    <body>
+        <div class="main">
+
+            <div class="nav">
+                <nav>
+                    <ul class="nav-bar">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#schedule">Schedule</a></li>
+                        <li><a href="#story">Our Story</a></li>
+                        <li><a href="#rsvp">RSVP</a></li>
+                        <li><a ><button id="toggle"><img id="theme" 
+                            src="https://www.shareicon.net/data/512x512/2015/08/04/79959_moon_512x512.png"
+                            ></button></a></li>
+                        <li><a><button id ="onBtn">
+                            <img id="onOff"
+                            src="https://cdn4.iconfinder.com/data/icons/education-black-outlined-1/48/21-512.png"
+                            >
+                        </button></a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+            <div class="header"><!-- This the Wedding hall Picture -->
+                <img 
+                    src="https://i.pinimg.com/736x/ae/07/24/ae0724f9b01099ebab84f5276ebc1b38.jpg"
+                    alt="couple-pic"
+                    
+                />
+                <h1>
+                    Welcome to Our Wedding
+                </h1> 
+                <h4>
+                    We invite you to celebrate our special day with us.
+                </h4>
+                <h4>
+                    We are so excited to share this joyous occasion with our loved one.
+                </h4>
+            </div>
+
+            <div id="schedule">
+                <h1>
+                    The Wedding
+                </h1>
+                <h4>
+                    Saturday, June 10 2025 at 5:00 PM
+                </h4>
+                <h4>
+                    Good Banquet Hall
+                </h4>
+                <h4>
+                    1234 Marriage Rd, City, State
+                </h4>
+
+                <h1>
+                    The Reception
+                </h1>
+                <h4>
+                    Sunday, June 11 2025 at 10:00 AM
+                </h4>
+                <h4>
+                    Aura Banquet Hall
+                </h4>
+                <h4>
+                    5678 Good Rd, City, State
+                </h4>
+                
+            </div>
+            <div class="rsvpSec">
+                <h2>RSVP</h2>
+            </div>
+            <div class="desc">
+                <h2>Join us in celebrating the beautiful couple's love! 
+                    This wedding website shares all the details—from venue 
+                    directions to RSVP—so you don’t miss a moment of their 
+                    special day. Explore their story, 
+                    view the event schedule, and confirm your attendance 
+                    with ease. 
+                    Let us make their joy unforgettable together!
+                </h2>
+                <ul id="list">
+                    <li>Susan Smith with Friends and Family</li>
+                </ul>
+            </div>
+            <div class="form">
+                <h1>
+                    Kindly RSVP by May 20th, 2025
+                </h1>
+                <form id="rsvp">
+                    <label>
+                        Please enter your name: 
+                        <input required type="text"  id="name"/>
+                    </label>
+                    <label>Please enter your email: 
+                        <input required type="email" id="email">
+                    </label>
+                    <label>
+                        How many people will you be attending with? (Enter 0 if your are coming solo)
+                        <input required type="number" id="num"/>
+                    </label>
+                    <input id="myBtn" type="submit">
+                </form>
+            </div>
+            <div id="modal" class="modal">
+                <div id="modal-content">
+                    
+                    <img id="ani" src="https://i.pinimg.com/originals/fd/73/b9/fd73b91a2fc0cc7997a2f66c4f7d35a7.gif">
+                    <span id="close">&times;</span>
+                </div>
+            </div>
+            <!-- Slideshow container -->
+            <div id="story" class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img class="slides" src="https://i.pinimg.com/736x/0f/ae/48/0fae48ef674eff9be17a2cf65936a617.jpg" 
+                    style="width:100%">
+                </div>
+  
+                <div class="mySlides fade">
+                    <img class="slides" src="https://i.pinimg.com/736x/8c/54/6a/8c546a8051403fa2df9c73acced51c48.jpg" 
+                    style="width:100%">
+                </div>
+  
+                <div class="mySlides fade">
+                    <img class="slides" src="https://i.pinimg.com/736x/f9/14/b1/f914b104057adbcfbfe2cafd17d76c05.jpg" 
+                    style="width:100%">
+                </div>
+  
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+  
+            
+            
+        </div>
+        
+        
+        
+        
+        
+        <script src="script.js"></script>
+    </body>
+    <footer>
+       <p>Codepath Web101 Project</p>
+    </footer>
+</html>
